@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import Navbar from './components/sections/Navbar';
 import Hero from './components/sections/Hero';
 import Marquee from './components/sections/Marquee';
@@ -41,6 +42,7 @@ export default function App() {
       <Testimonials />
       <Contact />
       <Footer />
+      <Analytics />
     </>
   );
 }
