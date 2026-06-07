@@ -14,7 +14,7 @@ import ContactPage from './pages/ContactPage';
 // Case Studies
 import Golden8 from './pages/projects/Golden8';
 import DentalClinic from './pages/projects/DentalClinic';
-import LuxeHotel from './pages/projects/LuxeHotel';
+import NorthGreen from './pages/projects/NorthGreen';
 import BlanketHotel from './pages/projects/BlanketHotel';
 
 // Scroll to Top on page change
@@ -75,7 +75,7 @@ function AnimatedRoutes() {
           <Route path="contact" element={<ContactPage />} />
           <Route path="projects/golden8" element={<Golden8 />} />
           <Route path="projects/dental-clinic" element={<DentalClinic />} />
-          <Route path="projects/luxe-hotel" element={<LuxeHotel />} />
+          <Route path="projects/north-green" element={<NorthGreen />} />
           <Route path="projects/blanket-hotel" element={<BlanketHotel />} />
         </Route>
       </Routes>

@@ -18,29 +18,29 @@ export default function DentalClinic() {
           Back to Home
         </Link>
         <div className="section-eyebrow">Case Study</div>
-        <h1 className="section-title">Dental Clinic Website</h1>
+        <h1 className="section-title">TanDent Dental Clinic</h1>
         <p className="project-desc" style={{ fontSize: '1.2rem', maxWidth: '800px', marginBottom: '2rem' }}>
-          Clean, trust-building website for a dental practice with appointment booking integration, Google Maps SEO, and patient-focused UX.
+          Clean, professional dental clinic portal featuring a patient timeline, interactive services showcase, and advanced booking integrations for branches in Ilagan City.
         </p>
         
         <div className="project-chips" style={{ marginBottom: '4rem' }}>
-          {['Web Design', 'Local SEO', 'Booking'].map((chip, i) => (
+          {['Web Design', 'React', 'Healthcare UX', 'Local SEO', 'Appointment Booking'].map((chip, i) => (
             <span key={i} className="project-chip">{chip}</span>
           ))}
         </div>
 
         <div className="case-study-content">
           <h2>Overview</h2>
-          <p>A professional and welcoming digital presence for a local dental clinic, designed to instill trust and make appointment scheduling frictionless for patients.</p>
+          <p>TanDent Dental Clinic (located in Alibagu and Marana, Ilagan City) needed a trusted digital platform to streamline booking, explain standard dental procedures, and showcase their modern clinic equipment and team expertise.</p>
           
           <h2 style={{ marginTop: '2rem' }}>The Approach</h2>
-          <p>We focused on a clean, modern aesthetic utilizing calming colors. Clear calls-to-action were strategically placed to guide users toward booking their first consultation.</p>
+          <p>We designed a welcoming and calming medical layout. Visual elements focus on a sticky services scroll to keep key clinical offerings accessible, alongside an interactive patient journey/timeline designed to demystify complex treatments and reduce patient anxiety.</p>
 
           <h2 style={{ marginTop: '2rem' }}>Results</h2>
-          <p>The new site resulted in a 40% increase in online inquiries and significantly improved their local search visibility on Google.</p>
+          <p>The system integrates seamlessly with online booking software and Facebook Messenger. Since deployment, the clinic has seen a significant boost in first-time appointment registrations and localized Google Maps inquiries.</p>
 
           <div style={{ marginTop: '4rem' }}>
-            <a href="https://dental-v2-olive.vercel.app" target="_blank" rel="noopener noreferrer" className="submit-btn" style={{ display: 'inline-block', textDecoration: 'none' }}>
+            <a href="https://tandent-alibagu.vercel.app" target="_blank" rel="noopener noreferrer" className="submit-btn" style={{ display: 'inline-block', textDecoration: 'none' }}>
               Visit Live Site
             </a>
           </div>

@@ -20,24 +20,24 @@ export default function Golden8() {
         <div className="section-eyebrow">Case Study</div>
         <h1 className="section-title">Golden 8 Resort</h1>
         <p className="project-desc" style={{ fontSize: '1.2rem', maxWidth: '800px', marginBottom: '2rem' }}>
-          Premium resort website with integrated booking system, dynamic room showcases, and SEO optimization for local search dominance in Isabela.
+          Premium beachfront resort booking platform featuring teepee cottages, family villas, an interactive booking system, and local SEO optimizations.
         </p>
         
         <div className="project-chips" style={{ marginBottom: '4rem' }}>
-          {['Web Design', 'React', 'Booking System', 'SEO'].map((chip, i) => (
+          {['Web Design', 'React', 'Supabase Database', 'Booking Flow', 'Local SEO'].map((chip, i) => (
             <span key={i} className="project-chip">{chip}</span>
           ))}
         </div>
 
         <div className="case-study-content">
           <h2>Overview</h2>
-          <p>We designed and developed a high-converting reservation platform for Golden 8 Resort, allowing guests to effortlessly explore amenities and book rooms directly.</p>
+          <p>We designed and developed a fully custom reservation platform for Golden 8 Resort in Casiguran, Aurora. The system allows guests to explore accommodation types (teepee cottages, family villas, floating cottages) and book rooms directly.</p>
           
           <h2 style={{ marginTop: '2rem' }}>The Challenge</h2>
-          <p>The resort previously relied on third-party OTAs, reducing their profit margins. The goal was to build a modern, fast, and trustworthy direct-booking engine.</p>
+          <p>The resort lacked a modern digital booking process and relied heavily on third-party platforms with high commissions. They needed a high-end showcase website and a secure, proprietary direct-booking system to control guest relations and maximize profit margins.</p>
 
           <h2 style={{ marginTop: '2rem' }}>The Solution</h2>
-          <p>Using React and a headless CMS, we crafted a visually stunning experience. We integrated a custom booking flow and implemented rigorous local SEO strategies to rank #1 in their region.</p>
+          <p>We engineered a highly performant React-based frontend integrated with a Supabase database to handle room availability, pricing tiers, and direct guest inquiries. We also implemented localized search optimization, ranking them top of local search categories in Aurora.</p>
 
           <div style={{ marginTop: '4rem' }}>
             <a href="https://golden-8-resort-redesign.vercel.app" target="_blank" rel="noopener noreferrer" className="submit-btn" style={{ display: 'inline-block', textDecoration: 'none' }}>

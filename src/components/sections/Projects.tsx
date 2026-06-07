@@ -23,18 +23,18 @@ export default function Projects() {
             className="project-card reveal"
             id="project-golden8"
           >
-            <div className="project-thumb thumb-pattern-1">
-              <div className="thumb-label">Golden 8</div>
+            <div className="project-thumb">
+              <img src="/assets/project-golden8.png" className="project-thumb-img" alt="Golden 8 Resort" />
               <div className="project-type-badge">Resort · Booking System</div>
             </div>
             <div className="project-body">
-              <div className="project-meta">2025 · Web Design + Development</div>
+              <div className="project-meta">2026 · Web Design + Development</div>
               <h3 className="project-title">Golden 8 Resort</h3>
               <p className="project-desc">
-                Premium resort website with integrated booking system, dynamic room showcases, and SEO optimization for local search dominance in Isabela.
+                Premium beachfront resort booking platform in Casiguran, Aurora. Features family villas, teepee cottages, Supabase booking, and local SEO.
               </p>
               <div className="project-chips">
-                {['Web Design', 'React', 'Booking System', 'SEO'].map((chip, i) => (
+                {['React', 'Supabase', 'Booking Flow', 'Local SEO'].map((chip, i) => (
                   <span key={i} className="project-chip">
                     {chip}
                   </span>
@@ -48,20 +48,20 @@ export default function Projects() {
             </div>
           </Link>
 
-          {/* Hotel Redesign */}
-          <Link to="/projects/luxe-hotel" className="project-card reveal reveal-delay-1" id="project-hotel">
-            <div className="project-thumb thumb-pattern-2">
-              <div className="thumb-label">Luxe Hotel</div>
-              <div className="project-type-badge">Hotel · Brand Identity</div>
+          {/* North Green Environmental */}
+          <Link to="/projects/north-green" className="project-card reveal reveal-delay-1" id="project-northgreen">
+            <div className="project-thumb">
+              <img src="/assets/project-northgreen.png" className="project-thumb-img" alt="North Green Environmental Consultancy" />
+              <div className="project-type-badge">Consultancy · Bento Grid</div>
             </div>
             <div className="project-body">
-              <div className="project-meta">2025 · Branding + Web Design</div>
-              <h3 className="project-title">Hotel Redesign Project</h3>
+              <div className="project-meta">2026 · UI/UX + Web Design</div>
+              <h3 className="project-title">North Green Environmental</h3>
               <p className="project-desc">
-                Full brand refresh and website redesign for a boutique hotel — luxury aesthetic, fast performance, and a seamless reservation experience.
+                Accredited environmental consultancy portal featuring interactive service grids, compliance calculators, and modern neon aesthetic.
               </p>
               <div className="project-chips">
-                {['Branding', 'Web Design', 'UI/UX'].map((chip, i) => (
+                {['Aceternity UI', 'React', 'Bento Layout', 'TailwindCSS'].map((chip, i) => (
                   <span key={i} className="project-chip">
                     {chip}
                   </span>
@@ -81,18 +81,18 @@ export default function Projects() {
             className="project-card reveal"
             id="project-dental"
           >
-            <div className="project-thumb thumb-pattern-3">
-              <div className="thumb-label">Dental</div>
-              <div className="project-type-badge">Clinic · Local SEO</div>
+            <div className="project-thumb">
+              <img src="/assets/project-dental.png" className="project-thumb-img" alt="TanDent Dental Clinic" />
+              <div className="project-type-badge">Clinic · Patient Timeline</div>
             </div>
             <div className="project-body">
-              <div className="project-meta">2025 · Web Design + Local SEO</div>
-              <h3 className="project-title">Dental Clinic Website</h3>
+              <div className="project-meta">2026 · Web Design + Local SEO</div>
+              <h3 className="project-title">TanDent Dental Clinic</h3>
               <p className="project-desc">
-                Clean, trust-building website for a dental practice with appointment booking integration, Google Maps SEO, and patient-focused UX.
+                Calming medical portal with sticky service navigation, interactive client timelines, and direct booking for Ilagan City branches.
               </p>
               <div className="project-chips">
-                {['Web Design', 'Local SEO', 'Booking'].map((chip, i) => (
+                {['Healthcare UX', 'React', 'Timeline UI', 'Local SEO'].map((chip, i) => (
                   <span key={i} className="project-chip">
                     {chip}
                   </span>
@@ -108,18 +108,18 @@ export default function Projects() {
 
           {/* Blanket Hotel */}
           <Link to="/projects/blanket-hotel" className="project-card reveal reveal-delay-1" id="project-blanket">
-            <div className="project-thumb thumb-pattern-4">
-              <div className="thumb-label">Blanket</div>
-              <div className="project-type-badge">Hotel · Full Redesign</div>
+            <div className="project-thumb">
+              <img src="/assets/project-blanket.png" className="project-thumb-img" alt="Blanket Hotel & Coffee Lab" />
+              <div className="project-type-badge">Hotel · Branding & Cafe</div>
             </div>
             <div className="project-body">
-              <div className="project-meta">2025 · Web Design + Development</div>
-              <h3 className="project-title">Blanket Hotel</h3>
+              <div className="project-meta">2026 · Web Design + Branding</div>
+              <h3 className="project-title">Blanket Hotel & Coffee Lab</h3>
               <p className="project-desc">
-                Modern, responsive hotel website with a warm, sophisticated aesthetic. Focused on storytelling, direct booking, and showcasing amenities.
+                Cozy, high-performance website for Blanket Hotel in Isabela, featuring room catalogs, Specialty Coffee menu pages, and tourism hubs.
               </p>
               <div className="project-chips">
-                {['Web Design', 'HTML/CSS/JS', 'Responsive'].map((chip, i) => (
+                {['Hotel Brand', 'React', 'Specialty Cafe', 'SEO'].map((chip, i) => (
                   <span key={i} className="project-chip">
                     {chip}
                   </span>
