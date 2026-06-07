@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom';
 
 export default function Projects() {
   return (
@@ -9,19 +9,17 @@ export default function Projects() {
             <div className="section-eyebrow">Selected Work</div>
             <h2 className="section-title">Recent Projects</h2>
           </div>
-          <a href="#contact" className="view-all-link">
+          <Link to="/contact" className="view-all-link">
             Start Your Project
             <svg viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>
-          </a>
+          </Link>
         </div>
         <div className="projects-grid">
           {/* Golden 8 Resort */}
-          <a
-            href="https://golden-8-resort-redesign.vercel.app"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to="/projects/golden8"
             className="project-card reveal"
             id="project-golden8"
           >
@@ -48,10 +46,10 @@ export default function Projects() {
                 <path d="M7 17L17 7M7 7h10v10" />
               </svg>
             </div>
-          </a>
+          </Link>
 
           {/* Hotel Redesign */}
-          <a href="#contact" className="project-card reveal reveal-delay-1" id="project-hotel">
+          <Link to="/projects/luxe-hotel" className="project-card reveal reveal-delay-1" id="project-hotel">
             <div className="project-thumb thumb-pattern-2">
               <div className="thumb-label">Luxe Hotel</div>
               <div className="project-type-badge">Hotel · Brand Identity</div>
@@ -75,13 +73,11 @@ export default function Projects() {
                 <path d="M7 17L17 7M7 7h10v10" />
               </svg>
             </div>
-          </a>
+          </Link>
 
           {/* Dental Clinic */}
-          <a
-            href="https://dental-v2-olive.vercel.app"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to="/projects/dental-clinic"
             className="project-card reveal"
             id="project-dental"
           >
@@ -108,10 +104,10 @@ export default function Projects() {
                 <path d="M7 17L17 7M7 7h10v10" />
               </svg>
             </div>
-          </a>
+          </Link>
 
           {/* Blanket Hotel */}
-          <a href="#contact" className="project-card reveal reveal-delay-1" id="project-blanket">
+          <Link to="/projects/blanket-hotel" className="project-card reveal reveal-delay-1" id="project-blanket">
             <div className="project-thumb thumb-pattern-4">
               <div className="thumb-label">Blanket</div>
               <div className="project-type-badge">Hotel · Full Redesign</div>
@@ -135,7 +131,7 @@ export default function Projects() {
                 <path d="M7 17L17 7M7 7h10v10" />
               </svg>
             </div>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

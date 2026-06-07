@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -17,26 +18,20 @@ export default function Navbar() {
     <>
       {/* Navbar */}
       <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`} id="navbar">
-        <a href="#hero" className="nav-logo">
+        <Link to="/" className="nav-logo">
           JRG<span>.</span>
-        </a>
+        </Link>
         <ul className="nav-links">
           <li>
-            <a href="#services">Services</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="#about">About</a>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <a href="#projects">Work</a>
-          </li>
-          <li>
-            <a href="#process">Process</a>
-          </li>
-          <li>
-            <a href="#contact" className="nav-cta">
+            <Link to="/contact" className="nav-cta">
               Let's Talk
-            </a>
+            </Link>
           </li>
         </ul>
         <button
@@ -56,18 +51,18 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       <div className={`nav-mobile-menu ${isMobileMenuOpen ? 'open' : ''}`} id="mobileMenu">
-        <a
-          href="#services"
+        <Link
+          to="/"
           className="mobile-link"
           onClick={() => {
             setIsMobileMenuOpen(false);
             document.body.style.overflow = '';
           }}
         >
-          Services
-        </a>
-        <a
-          href="#about"
+          Home
+        </Link>
+        <Link
+          to="/about"
           className="mobile-link"
           onClick={() => {
             setIsMobileMenuOpen(false);
@@ -75,29 +70,9 @@ export default function Navbar() {
           }}
         >
           About
-        </a>
-        <a
-          href="#projects"
-          className="mobile-link"
-          onClick={() => {
-            setIsMobileMenuOpen(false);
-            document.body.style.overflow = '';
-          }}
-        >
-          Work
-        </a>
-        <a
-          href="#process"
-          className="mobile-link"
-          onClick={() => {
-            setIsMobileMenuOpen(false);
-            document.body.style.overflow = '';
-          }}
-        >
-          Process
-        </a>
-        <a
-          href="#contact"
+        </Link>
+        <Link
+          to="/contact"
           className="mobile-link"
           onClick={() => {
             setIsMobileMenuOpen(false);
@@ -105,7 +80,7 @@ export default function Navbar() {
           }}
         >
           Contact
-        </a>
+        </Link>
       </div>
     </>
   );

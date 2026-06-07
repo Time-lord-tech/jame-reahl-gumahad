@@ -1,18 +1,37 @@
 import { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 import { Analytics } from '@vercel/analytics/react';
-import Navbar from './components/sections/Navbar';
-import Hero from './components/sections/Hero';
-import Marquee from './components/sections/Marquee';
-import Services from './components/sections/Services';
-import About from './components/sections/About';
-import Projects from './components/sections/Projects';
-import Process from './components/sections/Process';
-import Testimonials from './components/sections/Testimonials';
-import Contact from './components/sections/Contact';
-import Footer from './components/sections/Footer';
 
-export default function App() {
-  // Reveal animations via IntersectionObserver
+// Components
+import Layout from './components/Layout';
+
+// Pages
+import Home from './pages/Home';
+import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
+
+// Case Studies
+import Golden8 from './pages/projects/Golden8';
+import DentalClinic from './pages/projects/DentalClinic';
+import LuxeHotel from './pages/projects/LuxeHotel';
+import BlanketHotel from './pages/projects/BlanketHotel';
+
+// Scroll to Top on page change
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
+function AnimatedRoutes() {
+  const location = useLocation();
+  
+  // Reveal animations via IntersectionObserver (re-run on path change)
   useEffect(() => {
     const revealObserver = new IntersectionObserver(
       (entries) => {
@@ -28,21 +47,31 @@ export default function App() {
 
     document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
     return () => revealObserver.disconnect();
-  }, []);
+  }, [location.pathname]);
 
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <Marquee />
-      <Services />
-      <About />
-      <Projects />
-      <Process />
-      <Testimonials />
-      <Contact />
-      <Footer />
+    <AnimatePresence mode="wait">
+      <Routes location={location} key={location.pathname}>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<AboutPage />} />
+          <Route path="contact" element={<ContactPage />} />
+          <Route path="projects/golden8" element={<Golden8 />} />
+          <Route path="projects/dental-clinic" element={<DentalClinic />} />
+          <Route path="projects/luxe-hotel" element={<LuxeHotel />} />
+          <Route path="projects/blanket-hotel" element={<BlanketHotel />} />
+        </Route>
+      </Routes>
+    </AnimatePresence>
+  );
+}
+
+export default function App() {
+  return (
+    <Router>
+      <ScrollToTop />
+      <AnimatedRoutes />
       <Analytics />
-    </>
+    </Router>
   );
 }
