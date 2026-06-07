@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom';
 
 export default function Hero() {
   return (
@@ -23,12 +23,12 @@ export default function Hero() {
               I craft <strong>premium digital experiences</strong> — from conversion-focused websites and e-commerce platforms to complete brand identities and automated sales systems. Based in the Philippines. Working worldwide.
             </p>
             <div className="hero-actions">
-              <a href="#contact" className="btn btn-white" id="hero-cta-primary">
+              <Link to="/contact" className="btn btn-white" id="hero-cta-primary">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                   <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
                 </svg>
                 Start a Project
-              </a>
+              </Link>
               <a href="#projects" className="btn btn-outline" id="hero-cta-secondary">
                 View My Work
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
