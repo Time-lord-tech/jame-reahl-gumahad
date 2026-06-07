@@ -78,7 +78,13 @@ export default function Projects() {
           </a>
 
           {/* Dental Clinic */}
-          <a href="#contact" className="project-card reveal" id="project-dental">
+          <a
+            href="https://dental-v2-olive.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-card reveal"
+            id="project-dental"
+          >
             <div className="project-thumb thumb-pattern-3">
               <div className="thumb-label">Dental</div>
               <div className="project-type-badge">Clinic · Local SEO</div>
