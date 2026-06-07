@@ -31,7 +31,7 @@ function ScrollToTop() {
 function AnimatedRoutes() {
   const location = useLocation();
   
-  // Reveal animations via IntersectionObserver (re-run on path change)
+  // Reveal animations via IntersectionObserver (handles dynamic routing)
   useEffect(() => {
     const revealObserver = new IntersectionObserver(
       (entries) => {
@@ -45,9 +45,26 @@ function AnimatedRoutes() {
       { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
     );
 
-    document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
-    return () => revealObserver.disconnect();
-  }, [location.pathname]);
+    const observeElements = () => {
+      document.querySelectorAll('.reveal:not(.observed)').forEach((el) => {
+        el.classList.add('observed');
+        revealObserver.observe(el);
+      });
+    };
+
+    observeElements();
+
+    const mutationObserver = new MutationObserver(() => {
+      observeElements();
+    });
+
+    mutationObserver.observe(document.body, { childList: true, subtree: true });
+
+    return () => {
+      revealObserver.disconnect();
+      mutationObserver.disconnect();
+    };
+  }, []);
 
   return (
     <AnimatePresence mode="wait">
