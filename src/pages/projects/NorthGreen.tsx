@@ -40,7 +40,7 @@ export default function NorthGreen() {
           <p>We built a sleek, dark-themed React application styled with premium custom CSS and modern bento grid components. Key compliance workflows are categorized into interactive cards, supported by neon accent borders and smooth hover effects. Strategic search engine optimization ensures high local visibility for commercial audits in Isabela.</p>
 
           <div style={{ marginTop: '4rem' }}>
-            <a href="https://north-green-environmental.vercel.app" target="_blank" rel="noopener noreferrer" className="submit-btn" style={{ display: 'inline-block', textDecoration: 'none' }}>
+            <a href="https://north-green-environmental.vercel.app" target="_blank" rel="noopener noreferrer" className="btn btn-white" style={{ display: 'inline-flex', textDecoration: 'none', marginTop: '2rem' }}>
               Visit Live Site
             </a>
           </div>

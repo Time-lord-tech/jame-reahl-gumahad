@@ -20,7 +20,7 @@ export default function Hero() {
               Freelance Designer<br />&amp; Digital Strategist
             </p>
             <p className="hero-desc">
-              I craft <strong>premium digital experiences</strong> — from conversion-focused websites and e-commerce platforms to complete brand identities and automated sales systems. Based in the Philippines. Working worldwide.
+              I craft <strong>premium digital experiences and automated growth systems</strong> — from conversion-focused websites to full Website-as-a-Service (WaaS) infrastructures and sales pipelines. Based in the Philippines. Working worldwide.
             </p>
             <div className="hero-actions">
               <Link to="/contact" className="btn btn-white" id="hero-cta-primary">

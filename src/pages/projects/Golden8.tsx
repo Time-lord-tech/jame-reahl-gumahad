@@ -40,7 +40,7 @@ export default function Golden8() {
           <p>We engineered a highly performant React-based frontend integrated with a Supabase database to handle room availability, pricing tiers, and direct guest inquiries. We also implemented localized search optimization, ranking them top of local search categories in Aurora.</p>
 
           <div style={{ marginTop: '4rem' }}>
-            <a href="https://golden-8-resort-redesign.vercel.app" target="_blank" rel="noopener noreferrer" className="submit-btn" style={{ display: 'inline-block', textDecoration: 'none' }}>
+            <a href="https://golden-8-resort-redesign.vercel.app" target="_blank" rel="noopener noreferrer" className="btn btn-white" style={{ display: 'inline-flex', textDecoration: 'none', marginTop: '2rem' }}>
               Visit Live Site
             </a>
           </div>

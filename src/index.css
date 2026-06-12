@@ -658,6 +658,14 @@ section { padding: 120px 0; }
 .project-desc {
     font-size: 14px; color: var(--text-muted); line-height: 1.7; margin-bottom: 20px;
 }
+.project-impact {
+    font-family: var(--font-ui); font-size: 13px; font-weight: 600;
+    color: var(--white); background: rgba(74, 222, 128, 0.1);
+    border-left: 2px solid #4ade80; padding: 10px 14px;
+    margin-bottom: 24px; border-radius: 0 4px 4px 0;
+    line-height: 1.4;
+}
+.project-impact strong { color: #4ade80; display: block; font-size: 10px; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 4px; }
 .project-chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .project-chip {
     font-family: var(--font-ui); font-size: 10px; font-weight: 600;

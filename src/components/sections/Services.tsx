@@ -183,6 +183,29 @@ const servicesData: ServiceItem[] = [
     ],
     tools: ['Meta Business Suite', 'Buffer', 'Canva Pro', 'Later', 'Hootsuite', 'Metricool', 'ChatGPT'],
     tags: ['Content Strategy', 'Scheduling', 'Analytics', 'Engagement']
+  },
+  {
+    num: 'Service 08',
+    icon: (
+      <svg viewBox="0 0 24 24" className="w-full h-full stroke-current fill-none stroke-[1.5]">
+        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+      </svg>
+    ),
+    title: 'Website as a Service (WaaS)',
+    desc: 'Automated 3-Pillar Growth Systems for local businesses. Instant lead capture, 5-star review generation, and reactivation campaigns.',
+    lead: 'A website should be an engine, not a brochure. My <strong>3-Pillar Growth System (WaaS)</strong> transforms local businesses by providing an automated infrastructure that instantly captures leads, generates 5-star Google reviews on autopilot, and reactivates dead leads into paying customers.',
+    includes: [
+      'The Website Manager (Instant Lead Capture)',
+      'The Reputation Manager (5-Star Google Reviews)',
+      'The Database Reactivator (Email/SMS Sequences)',
+      'Automated Cold Email Outreach Engine',
+      'Custom Demo Site Cloning & Deployment',
+      'Local SEO & Schema Markup',
+      'Monthly Subscription & Hosting Included',
+      'Dedicated Analytics Dashboard'
+    ],
+    tools: ['React', 'Supabase', 'Node.js', 'GWS CLI', 'Vercel', 'Postmark'],
+    tags: ['WaaS', 'Lead Capture', 'Automation', 'Growth']
   }
 ];
 
@@ -235,7 +258,6 @@ export default function Services() {
               className="service-card reveal"
               id={`svc-btn-${idx + 1}`}
               onClick={() => openServiceModal(idx)}
-              style={idx === 6 ? { gridColumn: '1 / -1' } : {}}
               aria-label={`Learn more about ${s.title}`}
             >
               <div className="service-card-arrow">

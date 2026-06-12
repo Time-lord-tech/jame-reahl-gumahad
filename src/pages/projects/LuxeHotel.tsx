@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
-export default function BlanketHotel() {
+export default function LuxeHotel() {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -18,33 +18,33 @@ export default function BlanketHotel() {
           Back to Home
         </Link>
         <div className="section-eyebrow">Case Study</div>
-        <h1 className="section-title">Blanket Hotel & Coffee Lab</h1>
+        <h1 className="section-title">Luxe Hotel Web App</h1>
         <p className="project-desc" style={{ fontSize: '1.2rem', maxWidth: '800px', marginBottom: '2rem' }}>
-          Cozy boutique hotel and coffee shop portal in Ilagan City, featuring room navigation, cafe menus, and local tourism directories.
+          High-end hospitality platform featuring dynamic room availability, dark-mode elegance, and immersive booking workflows.
         </p>
         
         <div className="project-chips" style={{ marginBottom: '4rem' }}>
-          {['Web Design', 'React', 'Branding', 'Local SEO', 'Hospitality'].map((chip, i) => (
+          {['React', 'Next-Gen UX', 'Booking Engine', 'Framer Motion'].map((chip, i) => (
             <span key={i} className="project-chip">{chip}</span>
           ))}
         </div>
 
         <div className="case-study-content">
           <h2>Overview</h2>
-          <p>Blanket Hotel & Coffee Lab is a premium boutique hotel and coffee laboratory located in Ilagan City, Isabela. They wanted to upgrade their online presence to showcase rooms, amenities, and their specialty coffee selections.</p>
+          <p>The Luxe Hotel Web App was designed to elevate the standard of digital hospitality. It provides a premium, immersive browsing experience for potential guests, blending high-quality imagery with seamless animations.</p>
           
           <h2 style={{ marginTop: '2rem' }}>Key Features</h2>
           <ul>
-            <li>Modern room galleries with clear accommodation specifications and amenities.</li>
-            <li>Dedicated Coffee Lab page displaying specialty coffee beans, signature brews, and cafe offerings.</li>
-            <li>Customized contact integration for quick reservations and event inquiries.</li>
+            <li>Immersive, dark-mode inspired UI tailored for luxury positioning.</li>
+            <li>Smooth page transitions and micro-interactions powered by Framer Motion.</li>
+            <li>Dynamic room inventory displays with elegant booking flows.</li>
           </ul>
 
           <h2 style={{ marginTop: '2rem' }}>Impact</h2>
-          <p>The updated digital catalog has made it easy for local travelers and coffee enthusiasts to discover their menu and check room rates, dramatically increasing organic engagement in Isabela.</p>
+          <p>The updated digital presence significantly boosts the brand's perceived value, leading to higher direct booking conversion rates and a more engaged customer base.</p>
 
           <div style={{ marginTop: '4rem' }}>
-            <a href="https://blanket-hotel.vercel.app" target="_blank" rel="noopener noreferrer" className="btn btn-white" style={{ display: 'inline-flex', textDecoration: 'none', marginTop: '2rem' }}>
+            <a href="https://hotel-website-luxe.vercel.app" target="_blank" rel="noopener noreferrer" className="btn btn-white" style={{ display: 'inline-flex', textDecoration: 'none', marginTop: '2rem' }}>
               Visit Live Site
             </a>
           </div>
